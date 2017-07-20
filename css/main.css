@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+}
+
+.home-btn {
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+}
+
+.other-btns {
+    position: absolute !important;
+    top: 5vh !important;
+    right: 5vw !important;
+}
+
+.other-btns a:first-child {
+    padding: 0 1em 0 0;
+}
+
+.contact {
+    position: absolute !important;
+    bottom: 0 !important;
+    text-align: center;
+    width: 100%;
+}
+
+.contact .block a{
+    margin-right: 1em;
+}
+
+.contact > .block > a:last-child {
+    display: inline-block;
+    background-image: url("./img/mail.svg");
+    height: 24px;
+    width: 24px;
+}
