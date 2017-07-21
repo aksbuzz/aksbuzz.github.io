@@ -7,13 +7,13 @@
 
 .home-btn {
     position: absolute;
-    top: 5vw;
+    top: 2vh;
     left: 5vw;
 }
 
 .other-btns {
     position: absolute !important;
-    top: 5vh !important;
+    top: 2vh !important;
     right: 5vw !important;
 }
 
