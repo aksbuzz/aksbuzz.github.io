@@ -1,40 +1,242 @@
 *,
 *::after,
 *::before {
-    box-sizing: border-box !important;
-    overflow: hidden !important;
+    box-sizing: border-box;
 }
 
-.home-btn {
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover,
+a:focus {
+    outline: none;
+}
+
+.button {
+    -webkit-transition: all 0.1s linear !important;
+    -moz-transition: all 0.1s linear !important;
+    transition: all 0.1s linear !important;
+}
+
+.about {
     position: absolute;
-    top: 2px;
-    left: 5vw;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: black;
 }
 
-.other-btns {
-    position: absolute !important;
-    top: 2vh !important;
-    right: 5vw !important;
-}
-
-.other-btns a:first-child {
-    padding: 0 1em 0 0;
-}
-
-.contact {
-    position: absolute !important;
-    bottom: 0 !important;
-    text-align: center;
+aside {
+    background-color: black;
+    color: white;
     width: 100%;
+    height: 100%;
+    padding: 10px 1%;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
 }
 
-.contact .block a{
-    margin-right: 1em;
+.icon {
+    width: 30px;
+    height: 30px;
 }
 
-.contact > .block > a:last-child {
-    display: inline-block;
-    background-image: url("./img/mail.svg");
-    height: 24px;
-    width: 24px;
+.quote {
+    position: absolute;
+    bottom: 3%;
+    text-align: center;
+    left: 50%;
+    line-height: 1.5em;
+    transform: translateX(-50%);
 }
+
+.quote .author {
+    font-size: 10px
+}
+
+.main {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Button */
+
+
+/* General styling for the links */
+
+.wrap a {
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+.btn6,
+.btn6:link,
+.btn6:visited {
+    padding: 13px 20px;
+    border: 1px solid #333;
+    color: #333;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    background: #fefefe;
+    letter-spacing: 3px;
+    transition: all .2s ease-in-out;
+}
+
+.btn6:hover,
+.btn6:link:hover,
+.btn6:visited:hover {
+    background: #333;
+    border: 1px solid #333;
+    color: #fefefe;
+    border-radius: 30px;
+}
+
+
+
+
+/***************************
+ *  MENU
+ **************************/
+/***************************
+ *  Application Main Styles
+ **************************/
+ #menu--toggle[type="checkbox"]:not(:checked),
+ #menu--toggle[type="checkbox"]:checked {
+   display: none;
+ }
+
+ .menu--toggle__trigger,
+ .menu--toggle__burger,
+ .menu--toggle__burger:before,
+ .menu--toggle__burger:after {
+   position: absolute;
+   top: 1.6em;
+   left: 1.6em;
+   width: 2em;
+   height: 5px;
+   background-color: #282828;
+   border-radius: 2px;
+   cursor: pointer;
+   z-index: 100;
+   transition: 0.35s cubic-bezier(0.25, 0.1, 0.25, 1);
+ }
+
+ .menu--toggle__trigger {
+   height: 2em;
+   background: none;
+ }
+
+ .menu--toggle__burger:before {
+   content: "";
+   top: 10px;
+   left: 0;
+ }
+ .menu--toggle__burger:after {
+   content: "";
+   top: 20px;
+   left: 0;
+ }
+
+ .menu__body {
+   position: absolute;
+   width: 7em;
+   height: 7em;
+   margin: 0;
+   padding: 0;
+   background-color: #fcfcfc;
+   border-bottom-right-radius: 100%;
+   box-shadow: 3px 3px 7px rgba(40, 40, 40, 0.2);
+   z-index: 10;
+   animation: checkboxUncheckedAnimation 0.35s both;
+ }
+
+ .menu__body-element,
+ .menu__body-link {
+   display: none;
+   margin: 5em 1em -3.3em -.1em;
+   font-weight: normal;
+   font-size: x-large;
+   color: #282828;
+   text-decoration: none;
+   text-transform: none;
+   list-style: none;
+   outline: 0;
+ }
+
+ .menu__body-element {
+   text-indent: 2em;
+ }
+
+ .menu__body-link:hover {
+   display: block;
+   width: 0;
+   color: #282828;
+   background-color: #e2e2e2;
+   animation: changeWidthOfElementAnimation 0.35s both;
+ }
+
+ #menu--toggle:checked + .menu--toggle__trigger + .menu--toggle__burger {
+   top: 35px;
+   transform: rotate(405deg);
+   transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+ }
+ #menu--toggle:checked + .menu--toggle__trigger + .menu--toggle__burger:before {
+   top: 0;
+   transform: rotate(-90deg);
+   transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+ }
+ #menu--toggle:checked + .menu--toggle__trigger + .menu--toggle__burger:after {
+   top: 0;
+   transform: rotate(90deg);
+   transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+ }
+ #menu--toggle:checked + .menu--toggle__trigger + .menu--toggle__burger + .menu__body {
+   animation: checkboxCheckedAnimation 1s cubic-bezier(0.25, 0.1, 0.25, 1) both;
+ }
+ #menu--toggle:checked + .menu--toggle__trigger ~ .menu__body .menu__body-element, #menu--toggle:checked + .menu--toggle__trigger ~ .menu__body .menu__body-link {
+   display: block;
+ }
+ /**
+  *  Animations
+  */
+ @keyframes checkboxCheckedAnimation {
+   50%, 100% {
+     width: 100vw;
+     height: 100vh;
+   }
+   100% {
+     border-radius: 0;
+   }
+ }
+ @keyframes checkboxUncheckedAnimation {
+   0% {
+     width: 100vw;
+     height: 100vh;
+   }
+ }
+ @keyframes changeWidthOfElementAnimation {
+   50% {
+     width: 0;
+   }
+   100% {
+     width: 100%;
+   }
+ }
