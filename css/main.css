@@ -131,8 +131,8 @@ aside {
 .menu--toggle__burger:before,
 .menu--toggle__burger:after {
   position: absolute;
-  top: 1.6em;
-  left: 1.6em;
+  top: 1.2em;
+  left: 1.2em;
   width: 2em;
   height: 5px;
   background-color: #282828;
@@ -161,8 +161,8 @@ aside {
 
 .menu__body {
   position: absolute;
-  width: 7em;
-  height: 7em;
+  width: 5em;
+  height: 5em;
   margin: 0;
   padding: 0;
   background-color: #fcfcfc;
