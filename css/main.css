@@ -2,7 +2,7 @@
 *::after,
 *::before {
   box-sizing: border-box;
-  overflow-y: none;
+  overflow-y: hidden;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
@@ -80,6 +80,10 @@ aside {
   transform: translate(-50%, -50%);
 }
 
+.main .quote {
+  font-size: smaller;
+}
+
 
 /* Button */
 
@@ -95,7 +99,7 @@ aside {
 .btn6,
 .btn6:link,
 .btn6:visited {
-  padding: 13px 20px;
+  padding: 5px 20px;
   border: 1px solid #333;
   color: #333;
   font-weight: 700;
