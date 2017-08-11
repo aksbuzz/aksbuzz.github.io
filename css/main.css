@@ -2,7 +2,6 @@
 *::after,
 *::before {
   box-sizing: border-box;
-  overflow-y: hidden;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
@@ -14,6 +13,7 @@ body {
   color: white;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 a {
@@ -78,10 +78,6 @@ aside {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.main .quote {
-  font-size: smaller;
 }
 
 
