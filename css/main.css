@@ -80,42 +80,6 @@ aside {
   transform: translate(-50%, -50%);
 }
 
-
-/* Button */
-
-
-/* General styling for the links */
-
-.wrap a {
-  text-decoration: none;
-  font-size: 18px;
-  display: block;
-}
-
-.btn6,
-.btn6:link,
-.btn6:visited {
-  padding: 5px 20px;
-  border: 1px solid #333;
-  color: #333;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 13px;
-  background: #fefefe;
-  letter-spacing: 3px;
-  transition: all .2s ease-in-out;
-}
-
-.btn6:hover,
-.btn6:link:hover,
-.btn6:visited:hover {
-  background: #333;
-  border: 1px solid #333;
-  color: #fefefe;
-  border-radius: 30px;
-}
-
-
 /***************************
  *  MENU
  **************************/
