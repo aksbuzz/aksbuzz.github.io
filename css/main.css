@@ -45,24 +45,27 @@ a:focus {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  background-color: #001f3f;
+  color: #7FDBFF;
+  width: 28vw;
   height: 50vh;
   left: 20%;
+  padding-left: 10px;
 }
 
 .intro {
-  font-size: xx-large;
+  font-size: 2vw;
   text-align: left;
   padding-top: 5%;
 }
 
-.separator {
+.about_container {
   position: absolute;
   top: 50%;
-  left: 50%;
-  width: 3px;
-  background-color: #001f3f;
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
+  width: 28vw;
   height: 50vh;
+  right: 20%;
 }
 
 
@@ -80,13 +83,13 @@ a:focus {
   cursor: pointer;
   font-weight: bold;
   white-space: pre;
-  color: #001f3f;
+  color: #7FDBFF;
   pointer-events: auto;
 }
 
 .enter:hover,
 .enter:focus {
-  border-bottom: 2px solid #001f3f;
+  border-bottom: 2px solid #7FDBFF;
 }
 
 .enter span {
