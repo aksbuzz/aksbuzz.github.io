@@ -22,12 +22,6 @@ a:focus {
   outline: none;
 }
 
-.button {
-  -webkit-transition: all 0.1s linear !important;
-  -moz-transition: all 0.1s linear !important;
-  transition: all 0.1s linear !important;
-}
-
 .quote {
   position: absolute;
   bottom: 3%;
@@ -39,98 +33,4 @@ a:focus {
 
 .quote .author {
   font-size: 10px
-}
-
-.main_container {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #001f3f;
-  color: #7FDBFF;
-  width: 28vw;
-  height: 50vh;
-  left: 20%;
-  padding-left: 10px;
-}
-
-.intro {
-  font-size: 2vw;
-  text-align: left;
-  padding-top: 5%;
-}
-
-.about_container {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 28vw;
-  height: 50vh;
-  right: 20%;
-}
-
-
-/* BUTTONS */
-
-.button_container {
-  position: relative;
-  left: 2%;
-}
-
-.enter {
-  margin: 3vh 10px 0 0;
-  font-size: 1em;
-  letter-spacing: 3px;
-  cursor: pointer;
-  font-weight: bold;
-  white-space: pre;
-  color: #7FDBFF;
-  pointer-events: auto;
-}
-
-.enter:hover,
-.enter:focus {
-  border-bottom: 2px solid #7FDBFF;
-}
-
-.enter span {
-  display: inline-block;
-}
-
-
-/*
-NAVBAR
-*/
-
-.navbar_container {
-  position: absolute;
-  top: 5%;
-  max-width: 60vw;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-ul {
-  list-style-type: none;
-  border-bottom: 2px solid #001f3f;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: white;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: inline-block;
-  color: #001f3f;
-  text-align: center;
-  padding: 10px 12px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #001f3f;
-  color: white;
 }
