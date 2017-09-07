@@ -51,6 +51,7 @@ a:hover {
   height: 100vh;
   width: 50vw;
   padding: 5%;
+  padding-top: 0;
   text-align: justify;
   line-height: 2em;
 }
@@ -97,7 +98,7 @@ a:hover {
 
   .about_container {
     width: 100vw;
-    padding: 5%;
+    padding-top: 0;
     height: auto;
     line-height: 2em;
     top: 50%;
