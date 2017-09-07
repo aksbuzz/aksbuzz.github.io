@@ -1,0 +1,81 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #111111;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: url("http://papers.co/wallpaper/papers.co-nq29-earthview-wood-forest-nature-25-wallpaper.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none
+}
+
+a:focus,
+a:hover {
+  outline: 0
+}
+
+.main_container {
+  color: #FFFCF2;
+  height: 100vh;
+  letter-spacing: 5px;
+  width: 50vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.intro {
+  margin-top: 25vh;
+  font-size: xx-large;
+  text-align: left;
+  margin-left: 7vw;
+}
+
+.about_container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #111111;
+  background-color: #FFFCF2;
+  height: 100vh;
+  width: 50vw;
+  padding: 5%;
+  line-height: 2em;
+  right: 0;
+}
+
+.button_container {
+  position: relative;
+  margin-left: 8vw;
+}
+
+.enter {
+  margin: 3vh 10px 0 0;
+  font-size: 1em;
+  letter-spacing: 3px;
+  cursor: pointer;
+  font-weight: 700;
+  white-space: pre;
+  color: #EB5E28;
+  pointer-events: auto
+}
+
+.enter:focus,
+.enter:hover {
+  border-bottom: 2px solid #CCC5B9;
+}
+
+.enter span {
+  display: inline-block
+}
