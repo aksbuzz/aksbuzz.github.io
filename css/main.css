@@ -52,7 +52,6 @@ a:hover {
   width: 50vw;
   padding: 5%;
   line-height: 2em;
-  right: 0;
 }
 
 .button_container {
@@ -80,3 +79,36 @@ a:hover {
   display: inline-block
 }
 
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 450px) {
+  .intro {
+    margin-top: 5vh;
+    font-size: large;
+    margin-left: 2vw
+  }
+
+  .main_container {
+    height: 80vh;
+    letter-spacing: 3px;
+    width: 100vw
+  }
+
+  .about_container {
+    width: 100vw;
+    padding: 5%;
+    line-height: 2em;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .button_container {
+    position: relative;
+    margin-left: 2.5vw;
+  }
+
+  .enter {
+    margin: 3vh 5px 0 0;
+  }
+}
