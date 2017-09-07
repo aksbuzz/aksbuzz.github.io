@@ -11,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background: url("http://papers.co/wallpaper/papers.co-nq29-earthview-wood-forest-nature-25-wallpaper.jpg") no-repeat center center fixed;
+  background: url("../wallpaper.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -51,7 +51,8 @@ a:hover {
   height: 100vh;
   width: 50vw;
   padding: 5%;
-  padding-top: 0;
+  padding-top: 7%;
+  overflow-y: scroll;
   text-align: justify;
   line-height: 2em;
 }
@@ -98,7 +99,6 @@ a:hover {
 
   .about_container {
     width: 100vw;
-    padding-top: 0;
     height: auto;
     line-height: 2em;
     top: 50%;
