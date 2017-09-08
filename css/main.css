@@ -37,7 +37,7 @@ a:hover {
 .inner {
   position: relative;
   text-align: center;
-  top: 50%;transform: translateY(-75%);
+  top: 50%;transform: translateY(-80%);
 }
 
 .intro {
