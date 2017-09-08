@@ -11,7 +11,6 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background: url("../wallpaper.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -35,11 +34,14 @@ a:hover {
   top: 0;
 }
 
+.inner {
+  position: relative;
+  text-align: center;
+  top: 50%;transform: translateY(-70%);
+}
+
 .intro {
-  margin-top: 25vh;
   font-size: xx-large;
-  text-align: left;
-  margin-left: 7vw;
 }
 
 .about_container {
@@ -59,7 +61,6 @@ a:hover {
 
 .button_container {
   position: relative;
-  margin-left: 8vw;
 }
 
 .enter {
@@ -86,9 +87,7 @@ a:hover {
 
 @media only screen and (max-width: 750px) {
   .intro {
-    margin-top: 10vh;
     font-size: large;
-    margin-left: 5vw
   }
 
   .main_container {
@@ -107,7 +106,6 @@ a:hover {
 
   .button_container {
     position: relative;
-    margin-left: 6vw;
   }
 
   .enter {
