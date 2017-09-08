@@ -28,7 +28,7 @@ a:hover {
   height: 100vh;
   letter-spacing: 5px;
   width: 50vw;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #0B132B;
   position: absolute;
   left: 0;
   top: 0;
@@ -37,7 +37,7 @@ a:hover {
 .inner {
   position: relative;
   text-align: center;
-  top: 50%;transform: translateY(-70%);
+  top: 50%;transform: translateY(-75%);
 }
 
 .intro {
@@ -48,8 +48,8 @@ a:hover {
   position: absolute;
   right: 0;
   top: 0;
-  color: #111111;
-  background-color: #FFFCF2;
+  color: #2E3532;
+  background-color: #CFDEE7;
   height: 100vh;
   width: 50vw;
   padding: 5%;
@@ -70,7 +70,7 @@ a:hover {
   cursor: pointer;
   font-weight: 700;
   white-space: pre;
-  color: #EB5E28;
+  color: #1C2541;
   pointer-events: auto
 }
 
